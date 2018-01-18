@@ -1,0 +1,41 @@
+
+html, body, .container {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    flex: 0 0 auto;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: darkblue;
+}
+
+.main {
+    flex: 1 1 auto;
+    color: white;
+    position: relative;/* need this to position inner content */
+    overflow-y: auto;
+    background-color: red;
+}
+
+footer {
+    flex: 0 0 auto;
+    color: white;
+    text-align: center;
+    background-color: black;
+    height: 80px;
+    line-height: 80px;
+}
